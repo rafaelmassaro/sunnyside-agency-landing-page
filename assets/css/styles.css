@@ -226,3 +226,69 @@ main .info-sections{
 .photography-session p{
     color: var(--dark-blue);
 }
+
+.client-testimonials{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.client-testimonials h2{
+    margin-top: 16rem;
+    font-size: 2rem;
+    font-family: 'Fraunces', sans-serif;
+    font-weight: 900;
+    color: var(--dark-grayish-blue);
+    letter-spacing: .5rem;
+    text-transform: uppercase;
+}
+
+.client-testimonials .testimonials-container{
+    margin-top: 8rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.testimonial{
+    max-width: 1024px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 16rem;
+}
+
+.image-avatar{
+    width: 8rem;
+    height: 8rem;
+}
+
+.image-avatar img{
+    width: 100%;
+    border-radius: 50%;
+}
+
+.testimonial p{
+    margin-top: 6rem;
+    font-size: 1.8rem;
+    font-family: 'Barlow', sans-serif;
+    color: var(--very-dark-grayish-blue);
+    text-align: center;
+    line-height: 3rem;
+    padding: 0 4rem;
+}
+
+.testimonial strong{
+    margin-top: 6rem;
+    font-size: 2rem;
+    font-family: 'Fraunces', sans-serif;
+    font-weight: 900;
+    color: var(--very-dark-desaturated-blue);
+}
+
+.testimonial span{
+    margin-top: 1.5rem;
+    font-size: 1.8rem;
+    font-family: 'Barlow', sans-serif;
+    color: var(--grayish-blue);
+}
