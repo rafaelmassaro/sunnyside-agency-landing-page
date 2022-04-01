@@ -20,3 +20,209 @@
     --white: hsl(0, 0%, 100%);
 }
 
+.banner{
+    width: 100%;
+    height: 100vh;
+    background-image: url("../images/desktop/image-header.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top;
+}
+
+.header{
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo{
+    width: 175px;
+    height: 40px;
+}
+
+.logo img{
+    width: 100%;
+}
+
+.menu{
+    list-style: none;
+}
+
+.menu li{
+    display: inline-block;
+    margin-left: 5rem;
+}
+
+.menu li a{
+    font-size: 1.8rem;
+    font-family: 'Barlow', sans-serif;
+    text-decoration: none;
+    color: var(--white);
+}
+
+.menu li a.contact{
+    background-color: var(--white);
+    color: var(--very-dark-desaturated-blue);
+    text-transform: uppercase;
+    font-family: 'Fraunces', serif;
+    font-weight: 900;
+    padding: 2.2rem 3.4rem;
+    border-radius: 30px;
+    transition: all 0.4s;
+}
+
+.menu li a.contact:hover{
+    color: var(--white);
+    background-color: rgb(111, 207, 255);
+}
+
+.title{
+    margin-top: 5rem;
+    font-size: 7rem;
+    text-align: center;
+    color: var(--white);
+    font-family: 'Fraunces', serif;
+    font-weight: 900;
+    text-transform: uppercase;
+}
+
+.arrow-icon{
+    margin-top: 9rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+main{
+    max-width: 100vw;
+}
+
+main .info-sections{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.info{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 15rem;
+}
+
+.info h2{
+    font-size: 3.7rem;
+    font-family: 'Fraunces', serif;
+    font-weight: 900;
+    color: var(--very-dark-desaturated-blue);
+}
+
+.info p{
+    margin-top: 3rem;
+    font-size: 1.8rem;
+    font-family: 'Barlow', sans-serif;
+    color: var(--dark-grayish-blue);
+    line-height: 1.5;
+}
+
+.info a{
+    margin-top: 3rem;
+    padding: 1rem;
+    font-size: 1.8rem;
+    font-family: 'Fraunces', serif;
+    font-weight: 900;
+    color: var(--very-dark-desaturated-blue);
+    text-decoration: none;
+    text-transform: uppercase;
+    position: relative;
+}
+
+.info a::before{
+    content: "";
+    position: absolute;
+    left: .6rem;
+    bottom: .8rem;
+    width: 14rem;
+    height: 1rem;
+    opacity: .4;
+    border-radius: 1rem;
+    z-index: -1;
+    transition: all 0.4s;
+}
+.info .brand-button::before{
+    background-color: var(--yellow);
+}
+
+.info .audience-button::before{
+    background-color: var(--soft-red);
+}
+
+.info a:hover::before{
+    opacity: 1;
+}
+
+.image-egg{
+    background-image: url('../images/desktop/image-transform.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    grid-column: 2/3;
+    grid-row: 1/2;
+}
+
+.image-cup{
+    background-image: url('../images/desktop/image-stand-out.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    grid-column: 1/2;
+    grid-row: 1/2;
+}
+
+.art-session{
+    height: 60rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: end;
+    padding: 6rem 18rem;
+}
+
+.art-session h2{
+    font-size: 2.6rem;
+    font-family: 'Fraunces', serif;
+    font-weight: 900;
+    text-transform: capitalize;
+    margin-bottom: 3.5rem;
+}
+
+.art-session p{
+    font-size: 1.8rem;
+    font-family: 'Barlow', sans-serif;
+    text-align: center;
+    line-height: 2.5rem;
+}
+
+.graphic-design-session{
+    background-image: url("../images/desktop/image-graphic-design.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+.graphic-design-session h2,
+.graphic-design-session p{
+    color: var(--very-dark-desaturated-blue);
+}
+
+.photography-session{
+    background-image: url("../images/desktop/image-photography.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+.photography-session h2,
+.photography-session p{
+    color: var(--dark-blue);
+}
