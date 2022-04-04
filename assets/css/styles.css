@@ -296,15 +296,15 @@ main .info-sections{
 }
 
 .gallery{
-    width: 100%;
-    height: 30rem;
-    display: flex;
-    flex-wrap: nowrap;
+    height: 36rem;
+    display: grid;
+    grid-template-columns: repeat(4 1fr);
+    grid-template-rows: 1fr;
 }
 
 .gallery .image{
-    width: 36rem;
-    
+    width: 100%;
+    height: 39rem;
 }
 
 .milk{
@@ -312,6 +312,8 @@ main .info-sections{
     background-position: center;
     background-size: contain;
     background-repeat: no-repeat;
+    grid-column: 1/2;
+    grid-row: 1/2;
 }
 
 .orange{
@@ -319,6 +321,8 @@ main .info-sections{
     background-position: center;
     background-size: contain;
     background-repeat: no-repeat;
+    grid-column: 2/3;
+    grid-row: 1/2;
 }
 
 .ice-cream{
@@ -326,6 +330,8 @@ main .info-sections{
     background-position: center;
     background-size: contain;
     background-repeat: no-repeat;
+    grid-column: 3/4;
+    grid-row: 1/2;
 }
 
 .sugar{
@@ -333,6 +339,8 @@ main .info-sections{
     background-position: center;
     background-size: contain;
     background-repeat: no-repeat;
+    grid-column: 4/5;
+    grid-row: 1/2;
 }
 
 footer{
