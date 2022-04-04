@@ -36,6 +36,7 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+    position: relative;
 }
 
 .logo{
@@ -49,10 +50,11 @@
 
 .menu{
     list-style: none;
+    display: flex;
 }
 
 .menu li{
-    display: inline-block;
+    
     margin-left: 5rem;
 }
 
@@ -110,7 +112,7 @@ main .info-sections{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding: 15rem;
+    padding: 10rem;
 }
 
 .info h2{
@@ -188,7 +190,7 @@ main .info-sections{
     flex-direction: column;
     align-items: center;
     justify-content: end;
-    padding: 6rem 18rem;
+    padding: 6rem 10rem;
 }
 
 .art-session h2{
@@ -277,7 +279,7 @@ main .info-sections{
     color: var(--very-dark-grayish-blue);
     text-align: center;
     line-height: 3rem;
-    padding: 0 4rem;
+    padding: 0 2rem;
 }
 
 .testimonial strong{
@@ -399,4 +401,53 @@ footer .social-media-links li a {
 
 .icon:hover{
     opacity: 1;
+}
+
+.attribution{
+    font-size: 1.5rem;
+    padding: 1rem;
+}
+
+@media (min-width: 450px) and (max-width: 850px){
+    .title{
+        font-size: 6rem;
+    }
+
+    .info{
+        padding: 3rem;
+    }
+
+    .art-session{
+        padding: 5rem 2rem;
+    }
+
+    .testimonials-container{
+        flex-direction: column;
+        padding: 0 15rem;
+    }
+
+    .gallery{
+        grid-template-columns: repeat(2 1fr);
+        grid-template-rows: repeat(2 1fr);
+    }
+
+    .milk{
+        grid-column: 1/2;
+        grid-row: 1/2;
+    }
+    
+    .orange{
+        grid-column: 2/3;
+        grid-row: 1/2;
+    }
+    
+    .ice-cream{
+        grid-column: 1/2;
+        grid-row: 2/3;
+    }
+    
+    .sugar{
+        grid-column: 2/3;
+        grid-row: 2/3;
+    }
 }
