@@ -296,7 +296,6 @@ main .info-sections{
 }
 
 .gallery{
-    height: 36rem;
     display: grid;
     grid-template-columns: repeat(4 1fr);
     grid-template-rows: 1fr;
@@ -304,13 +303,13 @@ main .info-sections{
 
 .gallery .image{
     width: 100%;
-    height: 39rem;
+    height: 38rem;
 }
 
 .milk{
     background-image: url("../images/desktop/image-gallery-milkbottles.jpg");
     background-position: center;
-    background-size: contain;
+    background-size: cover;
     background-repeat: no-repeat;
     grid-column: 1/2;
     grid-row: 1/2;
@@ -319,7 +318,7 @@ main .info-sections{
 .orange{
     background-image: url("../images/desktop/image-gallery-orange.jpg");
     background-position: center;
-    background-size: contain;
+    background-size: cover;
     background-repeat: no-repeat;
     grid-column: 2/3;
     grid-row: 1/2;
@@ -328,7 +327,7 @@ main .info-sections{
 .ice-cream{
     background-image: url("../images/desktop/image-gallery-cone.jpg");
     background-position: center;
-    background-size: contain;
+    background-size: cover;
     background-repeat: no-repeat;
     grid-column: 3/4;
     grid-row: 1/2;
@@ -337,7 +336,7 @@ main .info-sections{
 .sugar{
     background-image: url("../images/desktop/image-gallery-sugarcubes.jpg");
     background-position: center;
-    background-size: contain;
+    background-size: cover;
     background-repeat: no-repeat;
     grid-column: 4/5;
     grid-row: 1/2;
@@ -381,4 +380,23 @@ footer .social-media-links{
 footer .social-media-links li{
     display: inline-block;
     margin-left: 3rem;
+}
+
+footer .social-media-links li a {
+    position: relative;
+}
+
+footer .social-media-links li a {
+    position: relative;
+}
+
+.icon {
+    position: absolute;
+    left: 0;
+    opacity: 0;
+    transition: all 0.4s;
+}
+
+.icon:hover{
+    opacity: 1;
 }
