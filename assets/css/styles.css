@@ -48,15 +48,23 @@
     width: 100%;
 }
 
+.menu-button{
+    background-color: transparent;
+    border: 0;
+    cursor: pointer;
+    display: none;
+}
+
 .menu{
     list-style: none;
     display: flex;
+    gap: 5rem;
 }
 
-.menu li{
-    
+/* .menu li{
+    display: inline-block;
     margin-left: 5rem;
-}
+} */
 
 .menu li a{
     font-size: 1.8rem;
@@ -409,8 +417,56 @@ footer .social-media-links li a {
 }
 
 @media (min-width: 450px) and (max-width: 850px){
+
+    .menu-button{
+        display: block;
+    }
+
+    .header .menu{
+        display: block;
+        visibility: hidden;
+        position: absolute;
+        width: 80%;
+        top: 11rem;
+        right: 3rem;
+        height: 0;
+        background-color: var(--white);
+        padding: 3rem;
+        z-index: 99;
+        transition: .4s;
+        overflow-y: hidden;
+    }
+    
+    .header.active .menu{
+        height: 50vh;
+        visibility: visible;
+        overflow-y: auto;
+    }
+
+    nav .menu li{
+        height: 5rem;
+        text-align: center;
+        margin-bottom: 1rem;
+    }
+
+    nav .menu li a{
+        color: var(--dark-grayish-blue);
+    }
+
+    nav .menu li a.contact{
+        background-color: var(--yellow);
+        color: var(--very-dark-desaturated-blue);
+        text-transform: uppercase;
+        font-family: 'Fraunces', serif;
+        font-weight: 900;
+        padding: 2.2rem 3.4rem;
+        border-radius: 30px;
+        transition: all 0.4s;
+    }
+
     .title{
         font-size: 6rem;
+        margin: 0;
     }
 
     .info{
@@ -431,6 +487,145 @@ footer .social-media-links li a {
         grid-template-rows: repeat(2 1fr);
     }
 
+    .milk{
+        grid-column: 1/2;
+        grid-row: 1/2;
+    }
+    
+    .orange{
+        grid-column: 2/3;
+        grid-row: 1/2;
+    }
+    
+    .ice-cream{
+        grid-column: 1/2;
+        grid-row: 2/3;
+    }
+    
+    .sugar{
+        grid-column: 2/3;
+        grid-row: 2/3;
+    }
+}
+
+@media (max-width: 449px){
+    .menu-button{
+        display: block;
+    }
+
+    .header .menu{
+        display: block;
+        visibility: hidden;
+        position: absolute;
+        width: 80%;
+        top: 11rem;
+        right: 3rem;
+        height: 0;
+        background-color: var(--white);
+        padding: 3rem;
+        z-index: 99;
+        transition: .4s;
+        overflow-y: hidden;
+    }
+    
+    .header.active .menu{
+        height: 50vh;
+        visibility: visible;
+        overflow-y: auto;
+    }
+
+    nav .menu li{
+        height: 5rem;
+        text-align: center;
+        margin-bottom: 1rem;
+    }
+
+    nav .menu li a{
+        color: var(--dark-grayish-blue);
+    }
+
+    nav .menu li a.contact{
+        background-color: var(--yellow);
+        color: var(--very-dark-desaturated-blue);
+        text-transform: uppercase;
+        font-family: 'Fraunces', serif;
+        font-weight: 900;
+        padding: 2.2rem 3.4rem;
+        border-radius: 30px;
+        transition: all 0.4s;
+    }
+
+    .title{
+        font-size: 3rem;
+        margin: 0;
+    }
+
+    main .info-sections{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(6 1fr);
+    }
+
+    .image-egg{
+        height: 300px;
+        grid-column: 1/2;
+        grid-row: 1/2;
+    }
+
+    .image-cup{
+        height: 300px;
+        grid-column: 1/2;
+    }
+
+    .info{
+        padding: 3rem;
+        text-align: center;
+    }
+
+    .info h2{
+        font-size: 3rem;
+    }
+
+    .info p{
+        font-size: 1.5rem;
+    }
+
+    .info a::before{
+        left: 8.6rem;
+    }
+
+    .art-session{
+        padding: 5rem 2rem;
+    }
+
+    .art-session p{
+        font-size: 1.6rem;
+    }
+
+    .client-testimonials h2{
+        margin-top: 5rem;
+        font-size: 1.8rem;
+    }
+
+    .testimonials-container{
+        flex-direction: column;
+        padding: 0 2rem;
+    }
+
+    .testimonial{
+        margin-bottom: 8rem;
+    }
+
+    
+    .gallery{
+        grid-template-columns: repeat(2 1fr);
+        grid-template-rows: repeat(2 1fr);
+    }
+    
+    .gallery .image{
+        width: 100%;
+        height: 19rem;
+    }
     .milk{
         grid-column: 1/2;
         grid-row: 1/2;
